@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Bluecell</h1>
+        </div>
+    </header>
+
+    <section class="jumbotron">
+        <div class="container d-flex flex-wrap align-items-center">
+            <div class="form d-flex flex-wrap">
+                <form class="d-flex flex-wrap justify-content-between" action>
+                    <div class="d-flex flex-wrap">
+                        <label for="name">NOMBRE</label>
+                        <input autocomplete="off" id="name" type="text">
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <label for="company">EMPRESA</label>    
+                        <input id="company" type="text">
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <label for="phoneNumber">TELÉFONO</label>     
+                        <input autocomplete="off" id="phoneNumber" type="text">
+                    </div>
+                  <div>
+                    <label for="email">EMAIL</label>     
+                    <input autocomplete="off" id="email" type="text">
+                  </div>
+                    <button class="btn">Enviar</button>
+                </form>
+            </div>
+            <div class="imgContainer">
+                <img src="./img/chico-guitarra.png" alt="chico tocando guitaarra">
+            </div>
+        </div>
+    </section>
+
+    <section class="goals">
+        <div class="container d-flex flex-wrap align-items-center">
+            <div class="imgContainer">
+                <img src="./img/Group.png" alt="chico tocando guitaarra">
+            </div>
+            <div class="d-flex flex-direction-column">
+                <h5 class="title">SELECCIONE UN SELECTOR</h5>
+                <form action="">
+                    <select name="" id="">
+                        <option selected disabled value="optionOne">Seleccione un item</option>
+                        <option value="optionOne">Option one</option>
+                        <option value="optionTwo">Option two</option>
+                        <option value="OptionThree">Option three</option>
+                    </select>
+                </form>
+                <form action> 
+                    <h5 class="title">SELECCIONE UN OBJETIVO</h5>
+                    <div class="d-flex">
+                        <input type="radio" id="brand" name="filters" value="brand">
+                        <label for="brand">Reconocimiento de marca</label><br>
+                    </div>
+                    <div class="d-flex">
+                        <input type="radio" id="traffic" name="filters" value="traffic">
+                        <label for="traffic">Captación de tráfico</label><br>  
+                    </div>
+                    <div class="d-flex">
+                        <input type="radio" id="other" name="filters" value="other">
+                        <label for="other">Otros</label>
+                    </div>
+                    <button class="btn">Siguiente</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="age">
+        <div class="container d-flex flex-wrap align-items-center ">
+            <div class="description">
+              <h5 class="title">EDAD DE TU PÚBLICO</h5>
+              <form action="" class="d-flex flex-wrap flex-wrap align-items-center">
+                  <div class="d-flex justify-content-between flex-wrap w-100 align-items-center">
+                    <div class="mobileFrom">
+                        <label for="from">Desde</label>
+                        <select name="from" id="from">
+                            <option selected disabled value="all">Seleccione una opción</option>
+                            <option value="1015">10 años</option>
+                            <option value="1620">16 años</option>
+                            <option value="21-30">21 años</option>
+                        </select>
+                    </div>
+                    <div class="mobileTo">
+                        <label for="to">Hasta</label>
+                        <select name="to" id="to">
+                            <option selected disabled value="all">Seleccione una opción</option>
+                            <option value="1015">15 años</option>
+                            <option value="1620">20 años</option>
+                            <option value="21-30">40 años</option>
+                        </select>
+                    </div>
+                  </div>
+                  <h5 class="title interest">INTERESES DE TU PÚBLICO</h5>
+                  <div class="checkboxes d-flex flex-wrap justify-content-between">
+                     <div class="firstGroup">
+                         <div>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1">Interés 1</label><br>
+                         </div>
+                         <div>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2">Interés 2</label><br>
+                         </div>
+                        <div>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3">Interés 3</label><br><br>
+                        </div>
+                     </div>
+
+                     <div class="secondGroup">
+                         <div>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1">Interés 4</label><br>
+                         </div>
+                         <div>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2">Interés 5</label><br>
+                         </div>
+                         <div>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3">Interés 6</label><br><br>
+                         </div>
+                     </div>
+                     <div class="tirthGroup">
+                         <div>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1">Interés 7</label><br>
+                         </div>
+                        <div>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2">Interés 8</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3">Interés 9</label><br><br>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="btn">Comenzar</button>
+              </form>
+            </div>
+            <div id="slider">
+                <div id="slide">
+                    <ul id="slideContainerUl">
+                        <li>
+                            <img class="slideImages" src="./img/slide1.png" alt="">
+                        </li>
+                        <li>
+                            <img class="slideImages" src="./img/slide2.png" alt="">
+                        </li>
+                        <li>
+                            <img class="slideImages" src="./img/slide3.png" alt="">
+                        </li>
+                    </ul>
+                    <ol id="pagination">
+                        <li value='1'>
+                            <span class="indicator"><span></span></span>
+                        </li>
+                        <li value='2'>
+                            <span class='points'>....</span>
+                            <span class="indicator"><span></span></span>
+                        </li>
+                        <li value='3'>
+                            <span class="points">....</span>
+                            <span class="indicator"><span></span></span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="invest">
+        <div class="container">
+            <h5 class="title text-center">SELECCIONA UN RANGO DE INVERSIÓN</h5>
+            <div class="d-flex justify-content-between flex-wrap w-100 align-items-center">
+                <div class="selectContainer d-flex  flex-wrap justify-content-between align-items-center">
+                    <label for="from">Desde</label>
+                    <select name="from" id="from">
+                        <option selected disabled value="all">Seleccione una opción</option>
+                        <option value="1000">1000 Usd</option>
+                        <option value="3000">3000 Usd</option>
+                        <option value="4000">4000 Usd</option>
+                    </select>
+                </div>
+                <div class="selectContainer d-flex flex-wrap justify-content-between align-items-center">
+                    <label for="to">Hasta</label>
+                    <select name="to" id="to">
+                        <option selected disabled value="all">Seleccione una opción</option>
+                        <option value="2000">2000 Usd</option>
+                        <option value="5000">5000 años</option>
+                        <option value="10000">10000 Usd</option>
+                    </select>
+                </div>
+              </div>
+              <div class="duration">
+                  <h5 class="text-center title">SELECCIONE UNA DURACIÓN</h5>
+                  <div class="">
+                    <form class="w-100 d-flex flex-wrap justify-content-center" action>
+                        <select name="" id="">
+                            <option value="2000">1 año</option>
+                            <option value="5000">2 años</option>
+                            <option value="10000">3 años</option>
+                          </select>
+                          <div class="d-flex justify-content-center w-100">
+                            <button class="btn">Siguiente</button>
+                          </div>
+                    </form>
+                  </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="customers">
+        <div class="container d-flex justify-content-center w-100">
+            <img class="w-100" src="./img/clientes.png" alt="">
+        </div>
+        <img class="globeImg" src="./img/Group 20 Copy.png" alt="">
+    </section>
+
+    <section class="contact d-flex justify-content-between align-items-center">
+        <div class="w-100 d-flex justify-content-center">
+            <button id="btnContact" class="btn">Contactar</button>
+        </div>
+        <div class="w-100" style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px;">
+            <div style="padding-top: 20px; border-top: 1px solid white;">
+                <h1 class="logo">Bluecell</h1>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" style="display: block;">
+        <div id="modal">
+            <div class="close" id="close">x</div>
+            <form class="d-flex flex-wrap justify-content-between">
+                <div>
+                    <h5 class="title" for="name">NOMBRE</h5>
+                    <input autocomplete="off" id="name" name="name" type="text">
+                </div>
+                <div>
+                    <h5 class="title" for="company">EMPRESA</h5>
+                    <input autocomplete="off" id="compnay" name="company" type="text">
+                </div>
+                <div>
+                    <h5 class="title" for="phone">TELÉFONO</h5>
+                    <input autocomplete="off" id="phone" name="phone" type="number">
+                </div>
+                <div>
+                    <h5 class="title" for="email">EMAIL</h5>
+                    <input autocomplete="off" id="email" name="email" type="text">
+                </div>
+                <div>
+                    <div class="d-flex">
+                        <button class="btn">Recibir plan</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+    overflow-y: scroll;
+}
+
+.btn {
+    background-color: #0D2232;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+}
+
+.btn:hover {
+    background-color: #000000;
+}
+
+.container {
+    max-width: 1220px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.title {
+    color: #f8eb5d;
+    font-weight: 500;
+}
+
+ol, li {
+    list-style: none;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+/* =========================================== 
+Header
+==============================================*/
+header {
+    padding: 20px 0px;
+    color: #ffffff;
+}
+
+.logo {
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.logo::first-letter {
+    border-bottom: 3px solid  #ffffff;
+}
+
+/* =========================================== 
+jumbotron
+==============================================*/
+
+.jumbotron {
+    margin-top: -100px;
+    background: linear-gradient(#4BBBBC, #EA516E);
+    padding-bottom: 50px;
+}
+
+.jumbotron .container .form {
+    width: 50%;
+}
+
+.jumbotron .container .form form {
+    width: 100%;
+}
+
+.jumbotron .container .imgContainer{
+    width: 50%;
+}
+
+.jumbotron .container .imgContainer img {
+    width: 100%;
+}
+
+.jumbotron .container .form form div {
+    width: 48%;
+}
+
+.jumbotron .container .form form label {
+    display: block;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.jumbotron .container .form form input {
+    padding: 13px;
+    border-radius: 7px;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.jumbotron .container .form form input:focus {
+    outline: 0;
+    background-color: #ecf0f1;
+}
+
+
+/* =========================================== 
+Goals
+==============================================*/
+.goals {
+    background-color: #EA516E;
+    padding-bottom: 80px;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    outline: none;
+    border: 1px solid #ffffff;
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+input[type='radio']:before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="radio"]:checked:before {
+    background: #ffffff;
+    
+}
+
+input[type="radio"]:checked {
+  border-color: #ffffff;
+}
+
+.goals .container label {
+    color: #ffffff;
+}
+
+.goals .container .imgContainer {
+    width: 50%;
+}
+
+.goals .container .imgContainer img {
+    width: 100%;
+}
+
+.goals .container div:last-child {
+    width: 50%;
+}
+
+.goals .container h5:first-child {
+    margin-bottom: 20px;
+}
+
+.goals .container select {
+    padding: 13px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.goals .container select:focus, option:focus {
+    outline: 0;
+}
+
+.goals .container h5:last-child {
+    margin-bottom: 200px;
+}
+
+/* =========================================== 
+Slide
+==============================================*/
+
+.age {
+    padding-bottom: 200px;
+    background-color: #EA516E;
+}
+
+.age .container .description {
+    width: 60%;
+}
+
+#slider {
+    position: relative;
+    margin: auto;
+    width: 40%;
+    padding-left: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+}
+
+
+#slide ul {
+    position: relative;
+    left: 0%;
+    margin: auto;
+    height: auto;
+    width: 300%;
+    clear: both;
+    display: table;
+}
+
+#slide ul li {
+    position: relative;
+    float: left;
+    height: 400px;
+    width: 33.333333333333333333333333333%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#slide ul li img {
+    height: 100%;
+}
+
+ol {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+ol li {
+    display: flex;
+}
+
+
+ol li span.indicator{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #f8eb5d;
+    border-radius: 100%;
+    padding: 3px;
+    position: relative;
+}
+
+ol li .points {
+    margin-top: -3px;
+    color: #f8eb5d;
+}
+
+.fillIndicator {
+    background-color: #f8eb5d;
+    width: 10px;
+    height: 10px;
+}
+
+.age form {
+    margin-top: 20px;
+}
+
+.age form label {
+    color: #ffffff;
+}
+
+.age form select {
+    padding: 13px;
+    border-radius: 7px;
+    margin-left: 10px;
+    width: 220px;
+    max-width: 250px;
+}
+
+.age form select:focus {
+    outline: 0;
+}
+
+.age .interest {
+    margin-top: 50px;
+}
+
+/*Checkboxes*/
+
+.age .firstGroup div, .secondGroup div, .tirthGroup div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    outline: none;
+    border: 2px solid #ffffff;
+    position: relative;
+    margin-right: 10px;
+}
+
+input[type='checkbox']:before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:checked:before {
+    background: #ffffff;
+    
+}
+
+input[type="radio"]:checked {
+  border-color: #ffffff;
+}
+
+
+.age .checkboxes {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.age .checkboxes label {
+    color: #ffffff;
+}
+
+/* =========================================== 
+Invest
+==============================================*/
+
+.invest {
+    background: #EA516E;
+    padding-bottom: 80px;
+}
+
+.invest h5 {
+    margin-bottom: 50px;
+}
+
+.invest .selectContainer {
+    width: 45%;
+}
+
+.invest  label {
+    color: #ffffff;
+}
+
+.invest .selectContainer select {
+    width: 85%;
+    border-radius: 7px;
+    padding: 13px;
+    align-items: center;
+    border: none;
+}
+
+.invest .selectContainer select:focus {
+    outline: 0;
+}
+
+.invest .duration {
+    width: 100%;
+}
+
+.invest .duration h5 {
+    margin-top: 40px;
+}
+
+.invest .duration select{
+    width: 50%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+}
+
+.invest .duration select:focus{
+    outline: 0;
+}
+
+.invest .duration button {
+    margin-top: 30px;
+}
+
+/* =========================================== 
+    GCustomers
+==============================================*/
+
+.customers {
+    padding-bottom: 200px;
+    background: linear-gradient(#EA516E, #9F5689, #545BA5);
+    position: relative;
+    overflow: hidden;
+}
+
+.customers .globeImg {
+    position: absolute;
+    bottom: -100px;
+    left: -80px; 
+    width: 200px;
+}
+
+
+ /* =========================================== 
+    Contact
+==============================================*/
+
+.contact {
+    background: url('../img/background.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-position: center; */
+    height: 800px;
+    position: relative;
+    z-index: 10000;
+    margin-top: -100px;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    /* height: 120px;
+    background: beige; */
+}
+
+
+.contact .btn {
+    background: #EA516E;
+    cursor: pointer;
+}
+
+ /* =========================================== 
+    Modal
+==============================================*/
+
+#modal {
+    padding: 40px;
+    background: linear-gradient(#4BBBBC, #EA516E);
+    width: 60%;
+    left: 50%;
+    top: -500%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 100000000000000000000000000000;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    border-radius: 7px;
+}
+
+#modal .close {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: right;
+    cursor: default;
+}
+
+#modal form div {
+    width: 45%;
+}
+
+#modal form input {
+    padding: 13px;
+    border-radius: 7px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#modal form input:focus {
+    outline: 0;
+    background: #ecf0f1;
+}
+
+#modal form h5 {
+    margin-bottom: 20px;
+}
+
+#modal form  button {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 937px){
+    /* =========================================== 
+    jumbotron
+    ==============================================*/
+    .jumbotron .container {
+        flex-direction: column-reverse;
+    }
+    .jumbotron .container .form {
+        width: 100%;
+    }
+    .jumbotron .container .form form div {
+        width: 100%;
+    }
+    .jumbotron .container .form button {
+        margin-bottom: 50px;
+    }
+    .jumbotron .container .imgContainer{
+        width: 100%;
+    }
+
+    #modal form div {
+        width: 100%;
+    }
+
+    #modal {
+        width: 95%;
+    }
+    
+
+
+
+@media only screen and (max-width: 1000px){
+
+    .age .container h5 {
+        text-align: center;
+        width: 100%;margin-bottom: 50px;
+    }
+
+    .age .container .description {
+        margin-top: 60px;
+    }
+    .mobileFrom, .mobileTo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .mobileFrom select {
+        width: 100% !important;
+        margin-right: 0;
+    }
+
+    .mobileTo select {
+        width: 100% !important;
+    }
+}
+
+    /* =========================================== 
+    Goals
+    ==============================================*/
+
+    .goals .container .imgContainer {
+        width: 100%;
+    }
+      
+    .goals .container h5 {
+        text-align: center;
+    }
+    
+    .goals .container div:last-child {
+        width: 100%;
+    }
+
+    
+    /* =========================================== 
+    Age
+    ==============================================*/
+
+    .age .container {
+        flex-direction: column-reverse;
+    }
+
+    .age .container .description {
+        width: 100%;
+    }
+    
+    #slider {
+        width: 100%;
+        margin-top: 50px;
+        padding-left: 0px;
+    }
+}
+
+
+/* =========================================== 
+Goals
+==============================================*/
+
+
+@media only screen and (max-width: 810px){
+    /*Invest*/
+    .invest .selectContainer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 395px ){
+    #slide ul li {
+        height: 300px;
+    }
+
+    .invest .selectContainer select {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
