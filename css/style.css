@@ -8,6 +8,7 @@
 
 :root {
     font-family: 'Roboto', sans-serif;
+
 }
 
 body {
@@ -228,7 +229,7 @@ Slide
 ==============================================*/
 
 .age {
-    padding-bottom: 200px;
+    padding-bottom: 80px;
     background-color: #EA516E;
 }
 
@@ -245,7 +246,6 @@ Slide
     display: flex;
     justify-content: end;
 }
-
 
 #slide ul {
     position: relative;
@@ -284,7 +284,6 @@ ol {
 ol li {
     display: flex;
 }
-
 
 ol li span.indicator{
     display: inline-block;
@@ -453,7 +452,6 @@ Invest
     width: 200px;
 }
 
-
  /* =========================================== 
     Contact
 ==============================================*/
@@ -465,7 +463,6 @@ Invest
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /* background-position: center; */
     height: 800px;
     position: relative;
     z-index: 10000;
@@ -473,8 +470,6 @@ Invest
     padding: 100px;
     display: flex;
     align-items: center;
-    /* height: 120px;
-    background: beige; */
 }
 
 
@@ -591,8 +586,6 @@ Invest
     }
     
 
-
-
 @media only screen and (max-width: 1000px){
 
     .age .container h5 {
@@ -632,7 +625,12 @@ Invest
     .goals .container h5 {
         text-align: center;
     }
-    
+
+    .goals .container h5:first-child {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
     .goals .container div:last-child {
         width: 100%;
     }
@@ -669,16 +667,43 @@ Goals
         width: 100%;
         margin-bottom: 20px;
     }
-}
 
+    
+    .invest .selectContainer {
+        width: 100%;
+    }
 
-@media only screen and (max-width: 395px ){
-    #slide ul li {
-        height: 300px;
+    .invest label {
+        margin-bottom: 10px;
     }
 
     .invest .selectContainer select {
         width: 100%;
+    }
+    
+    .invest .duration select {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 395px ){
+    /*=======================================
+     Slide
+    ========================================*/
+    #slide ul li {
+        height: 300px;
+    }
+     /*=======================================
+     Invest
+    ========================================*/
+
+    .invest .selectContainer select {
+        width: 100%;
         margin-top: 10px;
+    }
+    
+    .checkboxes .firstGroup, .secondGroup, .tirthGroup {
+        width: 45%;
     }
 }

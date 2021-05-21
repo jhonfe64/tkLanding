@@ -48,8 +48,4 @@ btnContact.addEventListener('click', function(){
 close.addEventListener('click', function(){
     modal.style.top = '-500%';
     modal.style.transition =  '.7s ease-in-out'
-})
-
-
-
-
+});
